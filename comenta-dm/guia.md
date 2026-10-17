@@ -69,9 +69,10 @@ Regras que o sistema confere antes de mandar qualquer coisa:
 
 ## O que você precisa
 
-- **Conta profissional no Instagram** (Comercial ou Criador de conteúdo). Conta pessoal não funciona com a API.
+- **Conta profissional no Instagram** (Comercial ou Criador de conteúdo). Conta pessoal não funciona com a API. Trocar é grátis e leva 2 minutos: no app do Instagram, perfil → menu ☰ → **Configurações e atividade** → **Tipo de conta e ferramentas** → **Mudar para conta profissional**. Conta profissional é sempre pública.
 - **Conta no Facebook**, para entrar no painel de desenvolvedores da Meta (developers.facebook.com). Se for a primeira vez, a Meta pede para você se cadastrar como desenvolvedor. É grátis.
 - **Conta no Supabase** (supabase.com), no **plano gratuito**. O Supabase é onde ficam o banco de dados e a função que conversa com o Instagram.
+- **Conta no GitHub** (github.com), grátis, para publicar as três páginas que a Meta exige (privacidade, termos e exclusão de dados; passo 1.5). Se você já tem um site, pode usar ele.
 - **Uma segunda conta do Instagram**, sua ou de alguém próximo, para testar. Você não consegue testar comentando no próprio post.
 - **Cerca de 1 hora**, sem pressa.
 

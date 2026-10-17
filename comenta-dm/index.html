@@ -100,13 +100,43 @@
   <section class="bloco" aria-labelledby="t-precisa">
     <p class="etiqueta">04 · Antes de começar</p>
     <h2 id="t-precisa">O que você precisa</h2>
-    <ul class="lista-check">
-      <li><strong>Conta profissional no Instagram.</strong> Comercial ou Criador de conteúdo. Conta pessoal não funciona com a API.</li>
-      <li><strong>Conta de desenvolvedor da Meta.</strong> Você entra com o Facebook em developers.facebook.com. É grátis.</li>
-      <li><strong>Projeto no Supabase, no plano gratuito.</strong> É onde ficam o banco e a função.</li>
-      <li><strong>Um assistente de IA.</strong> Claude Code, app do Claude, Codex ou outro.</li>
-      <li><strong>Cerca de 1 hora,</strong> sem pressa.</li>
-    </ul>
+    <p class="intro-lista">Toque em cada item para ver o que é e onde fazer.</p>
+    <div class="sanfona sanfona--check">
+      <details>
+        <summary><span class="item"><span class="item__nome">Conta profissional no Instagram</span><span class="item__sub">Grátis, leva 2 minutos</span></span></summary>
+        <p>É um tipo de conta que libera as estatísticas e a API do Instagram. Seus seguidores e posts continuam iguais. Conta pessoal não funciona com a automação.</p>
+        <p><strong>Onde trocar:</strong> no app do Instagram, vá no seu perfil → menu ☰ → <strong>Configurações e atividade</strong> → <strong>Tipo de conta e ferramentas</strong> → <strong>Mudar para conta profissional</strong>. Escolha <strong>Criador de conteúdo</strong> (se a conta é sua) ou <strong>Comercial</strong> (se é de uma empresa).</p>
+        <p class="aviso">Conta profissional é sempre pública. Dá para voltar para pessoal no mesmo menu, mas aí a automação para. O nome dos menus pode mudar um pouco conforme a versão do app.</p>
+      </details>
+      <details>
+        <summary><span class="item"><span class="item__nome">Acesso ao painel de desenvolvedores da Meta</span><span class="item__sub">Entra com o seu Facebook de sempre</span></span></summary>
+        <p>É onde você cria o "app". Não é um app de celular: é um cadastro que autoriza a sua automação a ler os comentários e mandar DM na sua conta.</p>
+        <p><strong>Onde:</strong> abra <strong>developers.facebook.com</strong> e entre com a sua conta do Facebook. Na primeira vez, a Meta pede para confirmar o e-mail ou o telefone e aceitar os termos de desenvolvedor. É grátis.</p>
+        <p><strong>Até o app ficar no ar são 6 etapas</strong> (Parte 1 do guia): criar o app, adicionar 3 permissões, colocar a sua conta como testadora, liberar as mensagens no Instagram, cadastrar 3 links e publicar. O seu assistente mostra onde clicar em cada uma.</p>
+      </details>
+      <details>
+        <summary><span class="item"><span class="item__nome">Três páginas: privacidade, termos e exclusão de dados</span><span class="item__sub">A Meta exige para publicar o app</span></span></summary>
+        <p>São três páginas simples na internet, explicando que dados a automação guarda e como alguém pede para apagar. O seu assistente escreve as três.</p>
+        <p><strong>Onde publicar:</strong> um lugar grátis é o <strong>GitHub Pages</strong>. Você só cria uma conta em <strong>github.com</strong> e o assistente prepara o resto. Se você já tem um site, pode colocar lá.</p>
+      </details>
+      <details>
+        <summary><span class="item"><span class="item__nome">Projeto no Supabase, no plano gratuito</span><span class="item__sub">Onde a automação mora</span></span></summary>
+        <p>O Supabase é um serviço na internet que guarda dados (o banco de dados) e roda pequenas funções na nuvem. É ele que recebe o aviso da Meta quando alguém comenta e manda a DM. Você não instala nada no seu computador.</p>
+        <p><strong>Onde:</strong> crie a conta em <strong>supabase.com</strong> (dá para entrar com o GitHub) e um projeto novo no plano gratuito. O assistente faz o resto com você.</p>
+      </details>
+      <details>
+        <summary><span class="item"><span class="item__nome">Uma segunda conta do Instagram</span><span class="item__sub">Para testar</span></span></summary>
+        <p>A automação ignora de propósito os comentários da sua própria conta. Use uma conta sua ou de alguém próximo para comentar a palavra e ver a DM chegar. Se essa conta não seguir você, a DM cai em <strong>Solicitações de mensagem</strong>.</p>
+      </details>
+      <details>
+        <summary><span class="item"><span class="item__nome">Um assistente de IA</span><span class="item__sub">Claude Code, app do Claude, Codex ou outro</span></span></summary>
+        <p>Ele lê o guia e conduz você, um passo de cada vez. Você não precisa saber programar: ele escreve o que for preciso, você clica onde ele pedir e confirma. O assistente pode ser pago.</p>
+      </details>
+      <details>
+        <summary><span class="item"><span class="item__nome">Cerca de 1 hora</span><span class="item__sub">Sem pressa</span></span></summary>
+        <p>A parte mais demorada é a da Meta, pelas idas e vindas entre o painel e o app do Instagram. Dá para parar e continuar depois: o assistente retoma de onde você parou.</p>
+      </details>
+    </div>
     <p class="nota">Os limites do plano gratuito do Supabase mudam. Confira em supabase.com/pricing, inclusive a pausa por inatividade.</p>
   </section>
 

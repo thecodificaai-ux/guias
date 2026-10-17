@@ -218,6 +218,22 @@ h3 { margin: 0 0 4px; font-family: var(--fonte-titulo); font-weight: 700; font-s
   font-size: .75rem; font-weight: 500;
 }
 
+/* Lista do que precisa, em sanfona */
+.intro-lista { margin: 0 0 var(--espaco-2); color: var(--cor-texto-secundario); font-size: .95rem; }
+.sanfona--check summary { justify-content: flex-start; }
+.sanfona--check summary::before {
+  content: "✓"; flex: none;
+  width: 22px; height: 22px; display: grid; place-items: center;
+  border-radius: 50%; background: var(--paleta-verde-suave); color: var(--paleta-noite);
+  font-family: var(--fonte-corpo); font-size: .75rem; font-weight: 500;
+}
+.sanfona--check summary::after { margin-left: auto; }
+.item { display: grid; gap: 2px; }
+.item__nome { font-family: var(--fonte-titulo); font-weight: 700; font-size: 1.05rem; color: var(--cor-titulo); }
+.item__sub { font-family: var(--fonte-corpo); font-weight: 400; font-size: .85rem; color: var(--cor-texto-secundario); }
+.sanfona p + p { margin-top: -6px; }
+.sanfona p.aviso { font-size: .88rem; border-left: 3px solid var(--cor-destaque); margin: 0 var(--espaco-2) var(--espaco-2); padding: 2px 0 2px 12px; }
+
 /* Sanfona */
 .sanfona { display: grid; gap: 10px; }
 .sanfona details {
