@@ -1,0 +1,111 @@
+/* GERADO por scripts/tokens/build.mjs — não editar. Fonte: brand/tokens.json */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url('../fontes/space-grotesk-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url('../fontes/space-grotesk-latin-700-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('../fontes/inter-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url('../fontes/inter-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url('../fontes/jetbrains-mono-latin-500-normal.woff2') format('woff2');
+}
+
+:root {
+  --paleta-creme: #F8F0E2;
+  --paleta-floresta: #1B4F3A;
+  --paleta-noite: #0F2A20;
+  --paleta-terracota: #D9622B;
+  --paleta-terracota-escura: #A8461A;
+  --paleta-terracota-clara: #E8743D;
+  --paleta-verde-suave: #9DB8A8;
+  --tipo-display: 116px;
+  --tipo-h1: 74px;
+  --tipo-h2: 64px;
+  --tipo-h3: 44px;
+  --tipo-corpo-g: 34px;
+  --tipo-corpo: 28px;
+  --tipo-legenda: 22px;
+  --linha-apertada: 1.05;
+  --linha-normal: 1.35;
+  --letra-titulo: -0.02em;
+  --letra-caixa-alta: 0.06em;
+  --espaco-1: 8px;
+  --espaco-2: 16px;
+  --espaco-3: 24px;
+  --espaco-4: 32px;
+  --espaco-6: 48px;
+  --espaco-8: 64px;
+  --espaco-12: 96px;
+  --raio-sm: 6px;
+  --raio-md: 16px;
+  --raio-lg: 32px;
+  --raio-pill: 999px;
+  --sombra-card: 0 12px 32px rgba(15, 42, 32, 0.28);
+  --fonte-titulo: 'Space Grotesk', Arial, sans-serif;
+  --fonte-corpo: 'Inter', Arial, sans-serif;
+  --fonte-mono: 'JetBrains Mono', Consolas, monospace;
+}
+
+:root, [data-tema="escuro"] {
+  --cor-fundo: var(--paleta-noite);
+  --cor-superficie: var(--paleta-floresta);
+  --cor-texto-superficie: var(--paleta-creme);
+  --cor-titulo: var(--paleta-creme);
+  --cor-texto: var(--paleta-creme);
+  --cor-texto-secundario: var(--paleta-verde-suave);
+  --cor-destaque: var(--paleta-terracota-clara);
+  --cor-destaque-texto: var(--paleta-terracota-clara);
+  --cor-botao-fundo: var(--paleta-terracota-clara);
+  --cor-botao-texto: var(--paleta-noite);
+  --cor-etiqueta: var(--paleta-terracota-clara);
+  --logo: url('/brand/logo/logo-horizontal-creme.svg');
+}
+
+[data-tema="claro"] {
+  --cor-fundo: var(--paleta-creme);
+  --cor-superficie: var(--paleta-floresta);
+  --cor-texto-superficie: var(--paleta-creme);
+  --cor-titulo: var(--paleta-floresta);
+  --cor-texto: var(--paleta-noite);
+  --cor-texto-secundario: var(--paleta-floresta);
+  --cor-destaque: var(--paleta-terracota);
+  --cor-destaque-texto: var(--paleta-terracota-escura);
+  --cor-botao-fundo: var(--paleta-terracota-escura);
+  --cor-botao-texto: var(--paleta-creme);
+  --cor-etiqueta: var(--paleta-terracota-escura);
+  --logo: url('/brand/logo/logo-horizontal-floresta.svg');
+}
+
+.t-display { font-family: var(--fonte-titulo); font-size: var(--tipo-display); font-weight: 700; line-height: var(--linha-apertada); letter-spacing: var(--letra-titulo); color: var(--cor-titulo); }
+.t-h1 { font-family: var(--fonte-titulo); font-size: var(--tipo-h1); font-weight: 700; line-height: var(--linha-apertada); letter-spacing: var(--letra-titulo); color: var(--cor-titulo); }
+.t-h2 { font-family: var(--fonte-titulo); font-size: var(--tipo-h2); font-weight: 700; line-height: var(--linha-apertada); letter-spacing: var(--letra-titulo); color: var(--cor-titulo); }
+.t-h3 { font-family: var(--fonte-titulo); font-size: var(--tipo-h3); font-weight: 500; line-height: var(--linha-apertada); letter-spacing: var(--letra-titulo); color: var(--cor-titulo); }
+.t-corpo-g { font-family: var(--fonte-corpo); font-size: var(--tipo-corpo-g); font-weight: 500; line-height: var(--linha-normal); }
+.t-corpo { font-family: var(--fonte-corpo); font-size: var(--tipo-corpo); font-weight: 400; line-height: var(--linha-normal); }
+.t-legenda { font-family: var(--fonte-corpo); font-size: var(--tipo-legenda); font-weight: 500; line-height: var(--linha-normal); }
+.t-mono { font-family: var(--fonte-mono); font-size: var(--tipo-legenda); font-weight: 500; line-height: var(--linha-normal); }

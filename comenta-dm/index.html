@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comenta e recebe no Instagram · passo a passo</title>
+<meta name="description" content="Monte o seu próprio “comenta e recebe” no Instagram com a API oficial da Meta e o plano gratuito do Supabase. Um prompt pronto e o guia completo para o seu assistente de IA.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://thecodificaai-ux.github.io/guias/comenta-dm/">
+<meta property="og:title" content="Seu próprio “comenta e recebe” no Instagram. De graça.">
+<meta property="og:description" content="O passo a passo do @ayrton.vercosa: um prompt para colar no seu assistente de IA e o guia completo em .md.">
+<link rel="icon" href="icone-creme.svg" type="image/svg+xml">
+<link rel="preload" href="fontes/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="marca/tokens.css">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="topo__marca">
+    <img src="icone-creme.svg" alt="" width="28" height="38">
+    <span>@ayrton.vercosa · Thecodifica</span>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" aria-labelledby="titulo">
+    <p class="hero__aviso"><span class="ponto" aria-hidden="true"></span><span>Você comentou <strong>LINK</strong> no post do @ayrton.vercosa. Este é o passo a passo.</span></p>
+    <h1 id="titulo" class="hero__titulo">Seu próprio <span class="destaque">“comenta e recebe”</span> no Instagram. <span class="gratis">De graça.</span></h1>
+    <ul class="hero__nuance">
+      <li>Roda no plano gratuito do Supabase.</li>
+      <li>A API da Meta não cobra.</li>
+      <li>Você precisa de um assistente de IA. Esse pode ser pago.</li>
+    </ul>
+    <div class="hero__acoes">
+      <button type="button" class="botao botao--principal" data-copiar="prompt-texto" data-rotulo="Copiar o prompt">Copiar o prompt</button>
+      <a class="botao botao--secundario" href="guia.md" download="guia.md">Baixar o guia (.md)</a>
+    </div>
+    <p class="hero__dica">Sem JavaScript? O prompt está logo abaixo. Selecione e copie.</p>
+  </section>
+
+  <section class="bloco" id="prompt" aria-labelledby="t-prompt">
+    <p class="etiqueta">01 · O prompt</p>
+    <h2 id="t-prompt">Cole isto no seu assistente</h2>
+    <div class="cartao-prompt">
+      <pre id="prompt-texto" tabindex="0">Leia o guia em https://thecodificaai-ux.github.io/guias/comenta-dm/guia.md e me ajude a montar essa automação no meu Instagram, um passo de cada vez. Pare e me espere sempre que eu precisar fazer algo no painel da Meta ou do Supabase, nunca mostre chaves ou senhas na conversa e confirme antes de qualquer coisa que não dá para desfazer.</pre>
+      <button type="button" class="botao botao--principal botao--cheio" data-copiar="prompt-texto" data-rotulo="Copiar o prompt">Copiar o prompt</button>
+    </div>
+    <p class="status" role="status" aria-live="polite"></p>
+  </section>
+
+  <section class="bloco" aria-labelledby="t-como">
+    <p class="etiqueta">02 · Como funciona</p>
+    <h2 id="t-como">Três passos, sem ferramenta paga no meio</h2>
+    <ol class="passos">
+      <li><span class="passos__n" aria-hidden="true">1</span><div><h3>Alguém comenta</h3><p>A pessoa escreve a palavra no seu post.</p></div></li>
+      <li><span class="passos__n" aria-hidden="true">2</span><div><h3>A Meta avisa</h3><p>O webhook, que é um aviso automático, chega na sua função no Supabase.</p></div></li>
+      <li><span class="passos__n" aria-hidden="true">3</span><div><h3>Sua função responde</h3><p>Ela manda a DM e responde o comentário em público.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="bloco" aria-labelledby="t-onde">
+    <p class="etiqueta">03 · Onde você usa a IA</p>
+    <h2 id="t-onde">Escolha onde você usa a IA</h2>
+    <div class="abas" role="tablist" aria-label="Assistente de IA" hidden>
+      <button type="button" role="tab" id="aba-code" aria-controls="painel-code" aria-selected="true">Claude Code</button>
+      <button type="button" role="tab" id="aba-app" aria-controls="painel-app" aria-selected="false" tabindex="-1">App do Claude</button>
+      <button type="button" role="tab" id="aba-outros" aria-controls="painel-outros" aria-selected="false" tabindex="-1">Codex/outros</button>
+    </div>
+    <div class="painel" id="painel-code" role="tabpanel" aria-labelledby="aba-code">
+      <h3>Claude Code</h3>
+      <ol>
+        <li>Abra o Claude Code numa pasta nova.</li>
+        <li>Cole o prompt.</li>
+        <li>Ele lê o link do guia sozinho e começa pela Parte 1.</li>
+      </ol>
+    </div>
+    <div class="painel" id="painel-app" role="tabpanel" aria-labelledby="aba-app">
+      <h3>App do Claude (site ou celular)</h3>
+      <ol>
+        <li>Abra uma conversa nova.</li>
+        <li>Cole o prompt.</li>
+        <li>Se ele disser que não consegue abrir links, baixe o guia e anexe o arquivo na conversa.</li>
+      </ol>
+      <a class="link-forte" href="guia.md" download="guia.md">Baixar o guia (.md)</a>
+    </div>
+    <div class="painel" id="painel-outros" role="tabpanel" aria-labelledby="aba-outros">
+      <h3>Codex e outros assistentes</h3>
+      <ol>
+        <li>Cole o prompt.</li>
+        <li>Ou anexe o arquivo do guia e peça para seguir parte por parte.</li>
+      </ol>
+      <a class="link-forte" href="guia.md" download="guia.md">Baixar o guia (.md)</a>
+    </div>
+  </section>
+
+  <section class="bloco" aria-labelledby="t-precisa">
+    <p class="etiqueta">04 · Antes de começar</p>
+    <h2 id="t-precisa">O que você precisa</h2>
+    <ul class="lista-check">
+      <li><strong>Conta profissional no Instagram.</strong> Comercial ou Criador de conteúdo. Conta pessoal não funciona com a API.</li>
+      <li><strong>Conta de desenvolvedor da Meta.</strong> Você entra com o Facebook em developers.facebook.com. É grátis.</li>
+      <li><strong>Projeto no Supabase, no plano gratuito.</strong> É onde ficam o banco e a função.</li>
+      <li><strong>Um assistente de IA.</strong> Claude Code, app do Claude, Codex ou outro.</li>
+      <li><strong>Cerca de 1 hora,</strong> sem pressa.</li>
+    </ul>
+    <p class="nota">Os limites do plano gratuito do Supabase mudam. Confira em supabase.com/pricing, inclusive a pausa por inatividade.</p>
+  </section>
+
+  <section class="bloco" aria-labelledby="t-travar">
+    <p class="etiqueta">05 · Se travar</p>
+    <h2 id="t-travar">Os erros que eu tive, e a saída</h2>
+    <div class="sanfona">
+      <details>
+        <summary>Chegam 0 comentários</summary>
+        <p>A API devolve 0 comentários em posts que têm comentário. O app da Meta ainda está em <strong>modo de desenvolvimento</strong>. Publique o app. Esse é o erro mais comum.</p>
+      </details>
+      <details>
+        <summary>O botão Publicar não aparece</summary>
+        <p>O app tem caso de uso de anúncios, Marketing API, Página ou Messenger. Aí o Publicar trava pedindo verificação da empresa. Caso de uso não sai depois. Crie um app novo, só com o caso de uso do Instagram e sem portfólio.</p>
+      </details>
+      <details>
+        <summary>O aviso dá erro 401</summary>
+        <p>A Meta avisou, mas a assinatura não bateu: a chave secreta guardada está errada. Use a <strong>chave secreta do app do Instagram</strong>, a da página da API do Instagram. Guarde de novo e comente outra vez.</p>
+      </details>
+      <details>
+        <summary>Nada chega na função</summary>
+        <p>O campo <code>comments</code> não está assinado no painel da Meta, ou a conta não foi inscrita. Assine, rode a inscrição de novo e confira se o app está Publicado. Enquanto isso, a varredura atende em até 10 minutos.</p>
+      </details>
+      <details>
+        <summary>A DM não chega</summary>
+        <p>Peça para a pessoa olhar <strong>Solicitações de mensagem</strong>. E lembre: o seu próprio comentário é ignorado de propósito. Teste com uma segunda conta.</p>
+      </details>
+      <details>
+        <summary>O token venceu</summary>
+        <p>Aparece erro com código 190, ou um alerta na configuração. Trocar a senha do Instagram também derruba o token. Gere outro no painel da Meta e guarde de novo, como o guia mostra.</p>
+      </details>
+    </div>
+    <p class="nota">A lista completa está na Parte 5 do guia.</p>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <p>Feito por Ayrton Verçosa — Thecodifica · <a href="https://www.instagram.com/ayrton.vercosa/" rel="noopener">@ayrton.vercosa</a></p>
+  <p>Guia independente, sem ligação com a Meta, a Anthropic ou o Supabase. Conferido em 17/10/2026.</p>
+  <p><a href="https://thecodificaai-ux.github.io/thecodifica-legal/privacidade.html">Política de privacidade</a></p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
