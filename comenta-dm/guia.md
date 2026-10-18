@@ -807,6 +807,37 @@ Este guia não é orientação jurídica. Se o seu negócio lida com muitos dado
 
 ---
 
+## Perguntas frequentes
+
+**Isso pode dar bloqueio ou banimento no Instagram?**
+Não existe garantia, mas o risco é baixo se você usar do jeito que o guia monta. A automação usa a **API oficial da Meta**, a mesma porta que ferramentas como o ManyChat usam, por meio de um app seu, publicado no painel de desenvolvedores. Ela não pede sua senha, não usa robô que clica no aplicativo nem extensão de navegador. E só manda DM para quem comentou a palavra pedindo, uma vez por post. O que costuma dar problema é comportamento de spam: mandar mensagem para quem não pediu, prometer algo no post e não entregar, link suspeito na DM ou um volume muito fora do normal. A Meta também limita quantas chamadas a API aceita por hora; se passar, ela recusa por um tempo e o sistema anota a falha.
+
+**Preciso pagar alguma coisa?**
+A Meta não cobra pelas chamadas da API. O Supabase tem plano gratuito, com limites e pausa do projeto depois de um tempo parado (confira em supabase.com/pricing). O único custo possível é o assistente de IA, se o seu for pago.
+
+**Preciso ligar o Instagram a uma página do Facebook?**
+Não. O guia usa a API do Instagram com login do próprio Instagram, que não pede página do Facebook nem portfólio empresarial. O Facebook só serve para entrar no painel de desenvolvedores.
+
+**A pessoa precisa me seguir para receber a DM?**
+Não. Se ela não seguir você, a DM cai em **Solicitações de mensagem**. Vale avisar isso na resposta pública do comentário.
+
+**Funciona em Reels, carrossel e post antigo?**
+Funciona em qualquer post seu: Reel, carrossel ou foto. Em post antigo também, mas só para comentários novos: a Meta só deixa responder no direct comentários de até 7 dias.
+
+**Posso usar uma palavra diferente em cada post?**
+Pode. Cada post tem a sua palavra, e a palavra de um post não dispara em outro. Se a mesma pessoa comentar duas vezes no mesmo post, ela recebe uma DM só.
+
+**Funciona no TikTok, no Facebook ou no Threads?**
+Não, só no Instagram. Se você postar o mesmo vídeo em outra rede, troque o pedido de comentário por outro chamado (seguir, link na bio).
+
+**Que dados das pessoas ficam guardados?**
+O mínimo: o id do comentário, o id do post, o número que a Meta usa para identificar quem comentou e se a DM foi enviada. O texto do comentário, o @, o nome e a foto não ficam. Tudo é apagado depois de 90 dias, e só você tem acesso (Parte 6).
+
+**Como desligo a automação de um post?**
+É só tirar a regra desse post da tabela `comenta.regras` (o assistente mostra o comando e espera o seu OK). Os outros posts continuam funcionando.
+
+---
+
 ## O que esta versão não faz
 
 - Só Instagram. Não funciona no TikTok, no Facebook nem no Threads.
