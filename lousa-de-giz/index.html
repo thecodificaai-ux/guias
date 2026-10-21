@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lousa de giz em código · a técnica inteira</title>
+<meta name="description" content="A técnica do Reel da lousa de giz: traço de giz, pontilhado de foto e um buraco negro feitos só com código, sem ferramenta paga de imagem. Um prompt pronto e o guia completo para o seu assistente de IA.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://thecodificaai-ux.github.io/guias/lousa-de-giz/">
+<meta property="og:title" content="A lousa de giz que se desenha sozinha. Só código.">
+<meta property="og:description" content="A técnica inteira do @ayrton.vercosa: um prompt para colar no seu assistente de IA, o guia em .md e duas provas para abrir no navegador.">
+<link rel="icon" href="icone-creme.svg" type="image/svg+xml">
+<link rel="preload" href="fontes/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="marca/tokens.css">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="topo__marca">
+    <img src="icone-creme.svg" alt="" width="28" height="38">
+    <span>@ayrton.vercosa · Thecodifica</span>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" aria-labelledby="titulo">
+    <p class="hero__aviso"><span class="ponto" aria-hidden="true"></span><span>Você comentou <strong>GIZ</strong> no Reel do @ayrton.vercosa. Esta é a técnica inteira.</span></p>
+    <h1 id="titulo" class="hero__titulo">A lousa que se desenha sozinha. <span class="destaque">Só código.</span></h1>
+    <ul class="hero__nuance">
+      <li>Nenhuma ferramenta paga de imagem: traço, pontilhado e buraco negro saem do código.</li>
+      <li>Roda no seu computador, com Remotion (vídeo em React), SVG, canvas e Python.</li>
+      <li>Você precisa de um assistente de IA. Esse pode ser pago. A voz do Reel foi clonada (paga), à parte.</li>
+    </ul>
+    <div class="hero__acoes">
+      <button type="button" class="botao botao--principal" data-copiar="prompt-texto" data-rotulo="Copiar o prompt">Copiar o prompt</button>
+      <a class="botao botao--secundario" href="guia.md" download="guia.md">Baixar o guia (.md)</a>
+    </div>
+    <p class="hero__dica">Sem JavaScript? O prompt está logo abaixo. Selecione e copie.</p>
+  </section>
+
+  <section class="bloco" id="prompt" aria-labelledby="t-prompt">
+    <p class="etiqueta">01 · O prompt</p>
+    <h2 id="t-prompt">Cole isto no seu assistente</h2>
+    <div class="cartao-prompt">
+      <pre id="prompt-texto" tabindex="0">Leia o guia em https://thecodificaai-ux.github.io/guias/lousa-de-giz/guia.md e me ajude a montar esse visual de lousa de giz no meu projeto, um passo de cada vez. Monte o template do Remotion que está no guia (pasta template/), rode o exemplo do buraco negro e só então adapte ao meu vídeo. Use só as cores que eu disser, pergunte antes de instalar qualquer coisa e não use ferramenta paga de imagem.</pre>
+      <button type="button" class="botao botao--principal botao--cheio" data-copiar="prompt-texto" data-rotulo="Copiar o prompt">Copiar o prompt</button>
+    </div>
+    <p class="status" role="status" aria-live="polite"></p>
+  </section>
+
+  <section class="bloco" aria-labelledby="t-provas">
+    <p class="etiqueta">02 · Veja funcionando</p>
+    <h2 id="t-provas">Duas provas para abrir no navegador</h2>
+    <ol class="passos">
+      <li><span class="passos__n" aria-hidden="true">1</span><div><h3><a class="link-forte" href="provas/prisma-pico-lua.html">Prisma, cume e lua</a></h3><p>O giz escreve, a câmera chega no vértice e um ponto de 3 pixels vira a lua. Um mundo só, uma câmera só.</p></div></li>
+      <li><span class="passos__n" aria-hidden="true">2</span><div><h3><a class="link-forte" href="provas/foto-em-pontilhado.html">Foto em pontilhado de giz</a></h3><p>Uma foto antiga (domínio público) vira 17 mil pontos de giz, soprados em 3 segundos. Troque o tamanho do grão.</p></div></li>
+    </ol>
+    <p class="nota">Cada prova é um arquivo só: abra, depois use "Exibir código-fonte" para ver como foi feito.</p>
+  </section>
+
+  <section class="bloco" aria-labelledby="t-template">
+    <p class="etiqueta">03 · Template pronto</p>
+    <h2 id="t-template">O código do Reel, pra você usar</h2>
+    <p>O mesmo código que gerou o buraco negro e o pontilhado do Reel, separado num template do Remotion. Você parte do resultado, não do zero.</p>
+    <ul class="hero__nuance">
+      <li><a class="link-forte" href="template/LEIA-ME.md">LEIA-ME: montar em uns 10 minutos</a></li>
+      <li><a class="link-forte" href="template/BuracoNegro.tsx">BuracoNegro.tsx</a> · <a class="link-forte" href="template/QuadroNegro.tsx">QuadroNegro.tsx</a> · <a class="link-forte" href="template/Exemplo.tsx">Exemplo.tsx</a> · <a class="link-forte" href="template/paleta.ts">paleta.ts</a></li>
+      <li><a class="link-forte" href="template/pontilhar.py">pontilhar.py</a>: transforma qualquer foto em pontos de giz</li>
+    </ul>
+  </section>
+
+  <section class="bloco" aria-labelledby="t-como">
+    <p class="etiqueta">04 · Como funciona</p>
+    <h2 id="t-como">Três ideias que fazem tudo</h2>
+    <ol class="passos">
+      <li><span class="passos__n" aria-hidden="true">1</span><div><h3>Traço de giz</h3><p>Uma linha vetorial (SVG) com um filtro que suja a borda. Ela "escreve" na tela animando o quanto da linha já apareceu, no tempo da palavra falada.</p></div></li>
+      <li><span class="passos__n" aria-hidden="true">2</span><div><h3>Pontilhado</h3><p>A foto vira brilho por célula e um algoritmo de difusão de erro decide onde vai ponto. Mais pontos onde é claro, quase nenhum onde é escuro.</p></div></li>
+      <li><span class="passos__n" aria-hidden="true">3</span><div><h3>Buraco negro</h3><p>Milhares de partículas em órbita (as de dentro mais rápidas), o lado de trás dobrado por cima da sombra e quem vem na nossa direção mais claro. Fórmula, não imagem.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="bloco" aria-labelledby="t-faq">
+    <p class="etiqueta">05 · Perguntas frequentes</p>
+    <h2 id="t-faq">O que todo mundo pergunta</h2>
+    <div class="sanfona">
+      <details>
+        <summary>Preciso saber programar?</summary>
+        <p>Não. O assistente escreve o código com você. Você precisa saber o que quer na tela e aprovar o que ele mostra.</p>
+      </details>
+      <details>
+        <summary>Dá para desenhar uma pessoa assim?</summary>
+        <p>Pessoa com volume desenhada à mão em código fica ruim. A regra que ficou: objeto, diagrama e cena são traço; pessoa é foto (a sua, ou de domínio público) virada em pontilhado.</p>
+      </details>
+      <details>
+        <summary>Funciona no celular?</summary>
+        <p>As provas abrem no navegador do celular. Para gerar o vídeo você precisa de um computador com Node.js.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <p>Feito por Ayrton Verçosa — Thecodifica · <a href="https://www.instagram.com/ayrton.vercosa/" rel="noopener">@ayrton.vercosa</a></p>
+  <p>Foto da prova: Thomas Edison, 1878, Mathew Brady, domínio público (Wikimedia Commons). Conferido em 21/10/2026.</p>
+  <p><a href="https://thecodificaai-ux.github.io/thecodifica-legal/privacidade.html">Política de privacidade</a></p>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
