@@ -272,3 +272,7 @@ h3 { margin: 0 0 4px; font-family: var(--fonte-titulo); font-weight: 700; font-s
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+.figura { margin: var(--espaco-4) 0; }
+.figura img { display: block; width: 100%; height: auto; border-radius: var(--raio-md); border: 1px solid var(--borda); }
+.figura figcaption { margin-top: 8px; font-size: .9em; color: var(--cor-texto-secundario); }

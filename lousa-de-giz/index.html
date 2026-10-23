@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lousa de giz em código · a técnica inteira</title>
-<meta name="description" content="A técnica do Reel da lousa de giz: traço de giz, pontilhado de foto e um buraco negro feitos só com código, sem ferramenta paga de imagem. Um prompt pronto e o guia completo para o seu assistente de IA.">
+<meta name="description" content="A técnica dos Reels da lousa de giz: traço de giz, pontilhado de foto, buraco negro e o algoritmo do esqueleto 3D, feitos só com código. Prompts prontos e o guia completo para o seu assistente de IA.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:url" content="https://thecodificaai-ux.github.io/guias/lousa-de-giz/">
@@ -28,7 +28,7 @@
 <main id="conteudo">
 
   <section class="hero" aria-labelledby="titulo">
-    <p class="hero__aviso"><span class="ponto" aria-hidden="true"></span><span>Você comentou <strong>GIZ</strong> no Reel do @ayrton.vercosa. Esta é a técnica inteira.</span></p>
+    <p class="hero__aviso"><span class="ponto" aria-hidden="true"></span><span>Você comentou no Reel do @ayrton.vercosa. Esta é a técnica inteira. Veio pelo <strong>ALGORITMO</strong>? <a class="link-forte" href="#algoritmo">Pule para o esqueleto 3D</a>.</span></p>
     <h1 id="titulo" class="hero__titulo">A lousa que se desenha sozinha. <span class="destaque">Só código.</span></h1>
     <ul class="hero__nuance">
       <li>Nenhuma ferramenta paga de imagem: traço, pontilhado e buraco negro saem do código.</li>
@@ -83,8 +83,32 @@
     </ol>
   </section>
 
+  <section class="bloco" id="algoritmo" aria-labelledby="t-algoritmo">
+    <p class="etiqueta">05 · O algoritmo</p>
+    <h2 id="t-algoritmo">Esqueleto 3D: o assistente descreve, o código desenha</h2>
+    <p>Em vez de pedir o desenho toda vez, você pede ao assistente um esqueleto em texto: os volumes do objeto, as linhas e como ele se mexe. O algoritmo junta tudo numa superfície, espalha milhares de partículas de giz, acende a luz e anima no ritmo da música, igual em todo render.</p>
+    <figure class="figura">
+      <img src="algoritmo.webp" width="1080" height="640" loading="lazy" alt="Três desenhos em partículas de giz sobre fundo preto: um cérebro com sulcos acesos e uma rede de pontos em volta, um coração com os vasos no alto e as coronárias em laranja, e um átomo com três órbitas.">
+      <figcaption>Cérebro, coração e átomo feitos pelo algoritmo a partir do esqueleto em texto.</figcaption>
+    </figure>
+    <ul class="hero__nuance">
+      <li>No Reel: o cérebro feito por uma equipe de nove agentes custou cerca de 1,46 milhão de tokens e 55 minutos. O do algoritmo, cerca de 141 mil tokens e 12 minutos.</li>
+      <li>Lê bem objeto de forma clara (órgão, átomo, peça, planeta). Bicho com pena ou pelo fino ainda sai esquisito.</li>
+      <li>Roda com o mesmo template do Remotion desta página. Nenhuma ferramenta paga de imagem.</li>
+    </ul>
+    <div class="cartao-prompt">
+      <pre id="prompt-esqueleto" tabindex="0">Leia o guia em https://thecodificaai-ux.github.io/guias/lousa-de-giz/template/esqueleto/GUIA.md e o formato no começo de https://thecodificaai-ux.github.io/guias/lousa-de-giz/template/esqueleto/esqueleto.tsx. Monte o template (LEIA-ME em https://thecodificaai-ux.github.io/guias/lousa-de-giz/template/LEIA-ME.md), copie a pasta esqueleto/ e rode o exemplo do coração. Depois eu te mando a imagem de um objeto: escreva o esqueleto dele (.esq.json) seguindo o guia, renderize três quadros, confira as quatro perguntas do guia e corrija no máximo três vezes. Pergunte antes de instalar qualquer coisa.</pre>
+      <button type="button" class="botao botao--principal botao--cheio" data-copiar="prompt-esqueleto" data-rotulo="Copiar o prompt do esqueleto">Copiar o prompt do esqueleto</button>
+    </div>
+    <ul class="hero__nuance">
+      <li><a class="link-forte" href="template/esqueleto/GUIA.md">GUIA.md: como escrever um esqueleto que fica bonito</a></li>
+      <li><a class="link-forte" href="template/esqueleto/esqueleto.tsx">esqueleto.tsx</a> · <a class="link-forte" href="template/esqueleto/Exemplo.tsx">Exemplo.tsx</a> · <a class="link-forte" href="template/esqueleto/ritmo.ts">ritmo.ts</a> · <a class="link-forte" href="template/esqueleto/tipos.ts">tipos.ts</a></li>
+      <li>Exemplos: <a class="link-forte" href="template/esqueleto/exemplos/coracao.esq.json">coração</a> · <a class="link-forte" href="template/esqueleto/exemplos/cerebro-v2.esq.json">cérebro</a> · <a class="link-forte" href="template/esqueleto/exemplos/atomo.esq.json">átomo</a></li>
+    </ul>
+  </section>
+
   <section class="bloco" aria-labelledby="t-faq">
-    <p class="etiqueta">05 · Perguntas frequentes</p>
+    <p class="etiqueta">06 · Perguntas frequentes</p>
     <h2 id="t-faq">O que todo mundo pergunta</h2>
     <div class="sanfona">
       <details>
@@ -94,6 +118,10 @@
       <details>
         <summary>Dá para desenhar uma pessoa assim?</summary>
         <p>Pessoa com volume desenhada à mão em código fica ruim. A regra que ficou: objeto, diagrama e cena são traço; pessoa é foto (a sua, ou de domínio público) virada em pontilhado.</p>
+      </details>
+      <details>
+        <summary>Quanto custa o esqueleto 3D?</summary>
+        <p>Zero em ferramenta de imagem. O que você gasta é o uso do seu assistente: no Reel, cada desenho ficou perto de 140 mil tokens, contando três rodadas de olhar o resultado e corrigir. Pronto o arquivo, ele roda igual quantas vezes você quiser, sem gastar de novo.</p>
       </details>
       <details>
         <summary>Funciona no celular?</summary>

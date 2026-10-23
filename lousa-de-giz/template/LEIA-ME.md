@@ -22,3 +22,10 @@ Use foto sua ou de domínio público.
 Tudo é função do quadro: o mesmo vídeo sai igual em todo render.
 
 Licença: uso livre, inclusive comercial. Um crédito ao @ayrton.vercosa é bem-vindo.
+
+## Desenho vivo por esqueleto 3D (o algoritmo do Reel do cérebro e do coração)
+A pasta `esqueleto/` transforma um esqueleto em texto (`.esq.json`: volumes, linhas, tubos e animação) em milhares de partículas de giz com luz, girando e pulsando. O assistente escreve o esqueleto olhando uma imagem; o código faz o resto, igual toda vez.
+1. Copie a pasta `esqueleto/` inteira para `src/esqueleto/`.
+2. No `src/Root.tsx`: `import {EsqueletoExemplo} from './esqueleto/Exemplo';` e coloque `<EsqueletoExemplo />` junto das composições.
+3. Abra **EsqCoracao**, **EsqCerebro** ou **EsqAtomo**.
+4. Para um objeto seu, mande o assistente ler `esqueleto/GUIA.md` antes de escrever o arquivo.
